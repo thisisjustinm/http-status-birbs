@@ -13,6 +13,7 @@ def home():
 def get_image(status):
     files = glob.glob("images/*.jpg")
     file_name = f'images\\{status}.jpg'
+    print(files, file_name)
     if file_name in files:
         return send_file(file_name, mimetype='image/jpeg')
     else:

@@ -14,8 +14,8 @@ def index():
 
 @app.route('/<status>')
 def get_image(status):
-    # file_name = f'images/{status}.jpg'
-    file_name = f'images\\{status}.jpg'
+    file_name = f'images/{status}.jpg'
+    # file_name = f'images\\{status}.jpg'
     if file_name in files:
         return send_file(file_name, mimetype='image/jpeg')
     else:
@@ -25,5 +25,5 @@ def get_image(status):
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
-    # app.run(host='0.0.0.0', port=port)
-    app.run(port=port, debug=True)
+    app.run(host='0.0.0.0', port=port)
+    # app.run(port=port, debug=True)

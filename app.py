@@ -9,6 +9,7 @@ files = glob.glob("images/*.jpg")
 @app.route('/')
 def index():
     code_list = [i[7:10] for i in files]
+    code_list.sort()
     return render_template('index.html', code_list=code_list, b_count=len(code_list))
 
 

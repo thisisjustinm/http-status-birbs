@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>🕊 HTTP Status Birbs</title>
+</head>
+<body>
+<h2>Home of HTTP Status Birbs 🦉</h2>
+<p>Hypertext Transfer Protocol Response status codes. With cute birbs. Inspired by <a href="https://http.cat">http.cat</a>.<br>
+    {{ b_count }} status code birbs are available. Append the status code to the end of the URL to access the birbs, like <code>/202</code>.<br>
+     Or click on the codes to see the birbs!
+</p>
+<h3>Available birbs:</h3>
+<ul>
+{% for code in code_list %}
+  <li><a href="/{{code}}">{{code}}</a></li>
+{% endfor %}
+</ul>
+   <h3>P.S.</h3>
+Images used here are not my property and are taken from various sites around the internet.<br> Please note that the images are NOT used for monetary purposes in any way, shape, or form and copyright infringement is NOT intended.
+<br>If you own a particular image and want it to be taken down, please open an <a href="https://github.com/thisisjustinm/http-status-birbs/issues">issue</a> and I will take I down ASAP.
+<br><br>Copyleft (ɔ) 2021 Justin M.
+</body>
+</html>

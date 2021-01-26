@@ -13,11 +13,6 @@ def index():
     return render_template('index.html', code_list=code_list, b_count=len(code_list))
 
 
-@app.route('/a')
-def a():
-    return 'Hi! Im on Heroku'
-
-
 @app.route('/<status>')
 def get_image(status):
     file_name = f'images/{status}.jpg'

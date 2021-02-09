@@ -2,7 +2,7 @@
 >Hypertext Transfer Protocol Response status codes. With cute birbs. Chirp!
 
 ### How to use
-Access the birbs [here](https://http-birbs.herokuapp.com/). Append the status-code to the URL you require, to access it. 
+Access the birbs [here](https://http-birbs.herokuapp.com/). Append the status-code you require to the URL, to access it. 
 
 ### Example
 ![418](images/418.jpg)
